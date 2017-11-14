@@ -28,9 +28,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        de.wr.simplecomposition.ITestComp1 testObject = new TestObject();
+        TestObject testObject = new TestObject();
         testObject.setTest(2);
+        testObject.onRefresh();
         System.out.println(testObject.getTest());
+
+        binding.activityMain.setOnClickListener(testObject);
     }
 
     @Override

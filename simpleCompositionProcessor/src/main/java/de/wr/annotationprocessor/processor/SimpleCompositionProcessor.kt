@@ -144,6 +144,10 @@ class SimpleCompositionProcessor : AbstractProcessor() {
                     }
                 }
             }
+        } else {
+            clazzElement.interfaces.filter { !it.toString().contains(clazzElement.simpleName.toString()) }.forEach {
+                defaultInterface.addExtendedType(it.toString())
+            }
         }
 
         methods.filter { it.modifiers.contains(Modifier.PUBLIC) && !it.modifiers.contains(Modifier.STATIC) && it.kind != ElementKind.CONSTRUCTOR }
