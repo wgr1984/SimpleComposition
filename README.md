@@ -26,7 +26,8 @@ repositories {
 and the following two dependecies:
 ```Groovy
 annotationProcessor "de.wr.simpledataclasses:simpleCompositionProcessor:0.1"
-provided "de.wr.simpledataclasses:libSimpleComposition:0.1"
+provided "de.wr.simpledataclasses:libSimpleComposition:0.1
+```
 
 ## Simple Sample
 ```Java
