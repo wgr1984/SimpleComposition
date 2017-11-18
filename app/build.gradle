@@ -44,7 +44,7 @@ android {
 
 repositories {
 //    mavenLocal()
-    maven { url "https://dl.bintray.com/wgr1984/SimpleDefaultMethods"}
+    maven { url "https://dl.bintray.com/wgr1984/SimpleComposition"}
 }
 
 dependencies {
@@ -72,8 +72,8 @@ dependencies {
     provided group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
     api project(path: ':libSimpleCompositionProcessor')
     annotationProcessor project(":simpleCompositionProcessor")
-//    annotationProcessor "de.wr.simpledefaultmethods:simpleCompositionProcessor:0.1"
-//    provided "de.wr.simpledefaultmethods:libSimpleCompositionProcessor:0.1"
+    //annotationProcessor "de.wr.simpledefaultmethods:simpleCompositionProcessor:0.1"
+    //provided "de.wr.simpledefaultmethods:libSimpleCompositionProcessor:0.1"
 
 }
 

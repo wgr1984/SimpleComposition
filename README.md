@@ -16,6 +16,18 @@ Quite simple just create one class which will be enriched by
 mixed in functionality and one or more classes to
 encapsulate these kind of functionality
 
+# How to include
+As project currenlty not published to major maven repos please add:
+```Groovy
+repositories {
+   maven { url "https://dl.bintray.com/wgr1984/SimpleComposition"}
+}
+```
+and the following two dependecies:
+```Groovy
+annotationProcessor "de.wr.simpledataclasses:simpleCompositionProcessor:0.1"
+provided "de.wr.simpledataclasses:libSimpleComposition:0.1"
+
 ## Simple Sample
 ```Java
 public class SideObject1 {
