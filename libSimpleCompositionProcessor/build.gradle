@@ -26,16 +26,16 @@ bintray {
     key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
     publications = ['LibPublication']
     pkg {
-        repo = 'SimpleDefaultMethods'
-        name = 'SimpleDefaultMethodsProcessor'
+        repo = 'SimpleComposition'
+        name = 'SimpleCompositionProcessor'
         userOrg = user
         licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/wgr1984/SimpleDefaultMethods.git'
+        vcsUrl = 'https://github.com/wgr1984/SimpleComposition.git'
         labels = ['annotation-processor', 'java', 'kotlin']
         publicDownloadNumbers = true
         version {
             name = '0.1'
-            desc = 'Simple Default Methods Lib ' + '0.1'
+            desc = 'Simple Composition Methods Lib ' + '0.1'
             vcsTag = '0.1'
         }
     }
